@@ -6,7 +6,7 @@ const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 // STEP 1: Gemini Vision analyzes the photo and returns structured game brief
 async function analyzePhoto(imageBuffer, mimeType) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
 
   const prompt = `Analyze this image and return a JSON game brief. Be creative and fun.
 
