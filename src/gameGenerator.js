@@ -239,8 +239,8 @@ CODE QUALITY
 OUTPUT: Return ONLY the raw HTML file. No markdown fences, no explanation, no comments outside the code. Begin with <!DOCTYPE html> and end with </html>.`;
 
   const message = await anthropic.messages.create({
-    model: 'claude-opus-4-5',
-    max_tokens: 16000,
+    model: 'claude-sonnet-4-5',
+    max_tokens: 32000,
     messages: [{ role: 'user', content: prompt }]
   });
 
